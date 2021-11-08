@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "784145612356",
+    "project_id": "tamilguruapp",
+    "storage_bucket": "tamilguruapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784145612356:android:e1b75fce3af0e6af670611",
+        "android_client_info": {
+          "package_name": "com.game.TamilGuru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784145612356-qnv1ebki169nslctm26jg0frvoomi4de.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsG6X73h4HeXE8JYgCt8kd5c4w3OLSHZ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784145612356-qnv1ebki169nslctm26jg0frvoomi4de.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

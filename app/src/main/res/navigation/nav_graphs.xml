@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graphs"
+    app:startDestination="@id/loginFragment">
+
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.game.TamilGuru.ui.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_createProfileFragment"
+            app:destination="@id/createProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rewardPageFragment"
+        android:name="com.game.TamilGuru.ui.Reward.RewardPageFragment"
+        android:label="RewardPageFragment" >
+        <action
+            android:id="@+id/action_rewardPageFragment_to_rewardProfilePageFragment"
+            app:destination="@id/rewardProfilePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rewardProfilePageFragment"
+        android:name="com.game.TamilGuru.ui.Reward.Profile.RewardProfilePageFragment"
+        android:label="reward_profile_page_fragment"
+        tools:layout="@layout/reward_profile_page_fragment" />
+    <fragment
+        android:id="@+id/createProfileFragment"
+        android:name="com.game.TamilGuru.ui.registration.CreateProfileFragment"
+        android:label="create_profile_fragment"
+        tools:layout="@layout/create_profile_fragment" >
+        <action
+            android:id="@+id/action_createProfileFragment_to_rewardPageFragment"
+            app:destination="@id/rewardPageFragment" />
+    </fragment>
+</navigation>

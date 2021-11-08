@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Tamil Guru</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gmail_Login">Login With</string>
+    <string name="singing_in">Signing in</string>
+
+    <string name="connection_error_msg">The network seems to be disconnected or slow. Check the connection or try again later</string>
+    <string name="connection_timeout_msg">Server couldn\'t be reached. Please check the network connection.</string>
+    <string name="api_failure_msg">Oops! Something went wrong. Please try again.</string>
+    <string name="Tittle">Tamil Guru</string>
+    <string name="LBtn">Login With</string>
+    <string name="CP_headline1">Create Your Profile</string>
+    <string name="CP_headline2">to earn coins and badges</string>
+    <string name="CP_Name">Name</string>
+    <string name="CP_Class">Class</string>
+    <string name="SBtn">Submit</string>
+    <string name="GS">Great Start !</string>
+    <string name="YHW">You have won</string>
+    <string name="RC">50</string>
+    <string name="Coin">Coin</string>
+    <string name="KidName">Aadishankaran</string>
+    <string name="HC">42125</string>
+    <string name="CE">Coin Earned</string>
+    <string name="Subject1">Tamil</string>
+    <string name="Subject2">English</string>
+    <string name="Subject3">Maths</string>
+    <string name="Subject4">Science</string>
+    <string name="Subject5">Social</string>
+    <string name="CD">Image</string>
+    <string name="please_wait">please wait</string>
+    <string name="login_session_expired">Login session expired</string>
+
+    <string name="GWS">20</string>
+    <string name="StarsScore">43</string>
+    <string name="TotalQuestions">835</string>
+    <string name="GW">Games Won</string>
+    <string name="Stars">Stars</string>
+    <string name="Questions">Questions</string>
+    <string name="MP">My Progress</string>
+    <string name="BW">Badges Won</string>
+    <string name="field_cant_be_empty">This field can\'t be empty</string>
+    <string name="select_class">Select Class</string>
+    <string name="ok">Ok</string>
+    <string name="clear_all">Clear All</string>
+    <string name="cancel">Cancel</string>
+</resources>
