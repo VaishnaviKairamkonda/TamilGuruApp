@@ -108,7 +108,7 @@ public class CreateProfile extends Fragment implements GoogleApiClient.OnConnect
                 .build();
 
         googleApiClient=new GoogleApiClient.Builder(getActivity())
-                .enableAutoManage(getActivity(),this)
+                .enableAutoManage(getActivity(),1,this)
                 .addApi(Auth.GOOGLE_SIGN_IN_API,gso)
                 .build();
         mbinding.BTLogin.setOnClickListener(this::launchRewardPageFragment);
@@ -118,6 +118,12 @@ public class CreateProfile extends Fragment implements GoogleApiClient.OnConnect
                 selectProfilePicture();
             }
         });
+    }
+    @Override
+    public void onPause() {
+        super.onPause();
+        googleApiClient.stopAutoManage(getActivity());
+        googleApiClient.disconnect();
     }
     @Override
     public void onStart() {
@@ -139,7 +145,7 @@ public class CreateProfile extends Fragment implements GoogleApiClient.OnConnect
         if(result.isSuccess()){
             GoogleSignInAccount account=result.getSignInAccount();
             mbinding.ETName.setText(account.getDisplayName());
-            mbinding.ETClass.setText(account.getEmail());
+          //  mbinding.ETClass.setText(account.getEmail());
             //userId.setText(account.getId());
             try{
                 Glide.with(getActivity()).load(account.getPhotoUrl()).into(mbinding.profilePic);
@@ -174,7 +180,7 @@ public class CreateProfile extends Fragment implements GoogleApiClient.OnConnect
                     if (data.getStatus() == Constants.STATUS_CODE_SUCCESS) {
                         Common.putDebugLog("registerProfileApiResponse:"+data.getMessage());
                         mSharedPref.setProfileType(Constants.PROFILE_TYPE_NOT_YET_LINKED);
-                        NavDirections toCreateProfileFragment = CreateProfileFragmentDirections.actionCreateProfileFragmentToRewardPageFragment();
+                        NavDirections toCreateProfileFragment = CreateProfileDirections.actionCreateProfileFragmentToRewardPageFragment();
 
                         Navigation.findNavController(mbinding.getRoot()).navigate(toCreateProfileFragment);
                         requireActivity().finish();
@@ -286,7 +292,7 @@ public class CreateProfile extends Fragment implements GoogleApiClient.OnConnect
 
             // RewardPageFragment rewardPageFragment=new RewardPageFragment();
            // rewardPageFragment.show(requireActivity().getSupportFragmentManager(), "My Fragment");
-            NavDirections toCreateProfileFragment = CreateProfileFragmentDirections.actionCreateProfileFragmentToRewardPageFragment();
+            NavDirections toCreateProfileFragment = CreateProfileDirections.actionCreateProfileFragmentToRewardPageFragment();
 
             Navigation.findNavController(mbinding.getRoot()).navigate(toCreateProfileFragment);
 

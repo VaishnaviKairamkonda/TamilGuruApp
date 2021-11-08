@@ -89,7 +89,7 @@ public  class LoginFragment extends Fragment implements GoogleApiClient.OnConnec
                 .requestEmail()
                 .build();
         googleApiClient=new GoogleApiClient.Builder( getActivity())
-                .enableAutoManage(getActivity(),this)
+                .enableAutoManage(getActivity(),0,this)
                 .addApi(Auth.GOOGLE_SIGN_IN_API,gso)
                 .build();
         fragmentLoginScreenBinding.BTLogin.setOnClickListener(new View.OnClickListener() {

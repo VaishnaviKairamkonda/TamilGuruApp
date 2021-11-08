@@ -29,9 +29,9 @@
         tools:layout="@layout/reward_profile_page_fragment" />
     <fragment
         android:id="@+id/createProfileFragment"
-        android:name="com.game.TamilGuru.ui.registration.CreateProfileFragment"
+        android:name="com.game.TamilGuru.ui.registration.CreateProfile"
         android:label="create_profile_fragment"
-        tools:layout="@layout/create_profile_fragment" >
+        tools:layout="@layout/fragment_create_profile" >
         <action
             android:id="@+id/action_createProfileFragment_to_rewardPageFragment"
             app:destination="@id/rewardPageFragment" />

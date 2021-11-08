@@ -1,8 +1,10 @@
-package com.example.tamilguru;
+package com.game.TamilGuru.ui.splash;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.game.TamilGuru.R;
 
 public class SplashActivity extends AppCompatActivity {
 
